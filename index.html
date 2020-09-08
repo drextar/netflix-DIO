@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/resposividade.css">
+    <link rel="stylesheet" href="style/menuMobile.css">
+
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <title>Netflix</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">CLONE NETFLIX DIO</h2>
+            <nav class="menuNav">
+                <a href="#films" target="_Blanc">Inicio</a>
+                <a href="#films">Séries</a>
+                <a href="#films">Filmes</a>
+                <a href="#films">Documentários</a>
+            </nav> 
+        </div>
+        <input type="checkbox" value="on" id="menuHamb" class="btnMenu">
+        <label for="menuHamb">
+            <div class="menu">
+                <span class="hamburgue"></span>
+            </div>
+        </label>
+        <ul id="menuOpen" class="menu-close">
+            <li class="menu-item">
+                <a class="menu-item-action" href="#films" target="_Blanc">Inicio</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-item-action" href="#films">Séries</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-item-action" href="#films">Filmes</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-item-action" href="#films">Documentários</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">O Senhor dos Anéis: A Sociedade do Anel</h3>
+                <p class="descricao">Em uma terra fantástica e única, um hobbit recebe de presente de seu tio um anel mágico e maligno que precisa ser destruído antes que caia nas mãos do mal.</p>
+                <div class="buttons">
+                    <button role="button" class="button" onclick="play()">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="button" onclick="linkedin()" >
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section id="films">
+        <div class="carousel-filmes">
+            <div class="owl-carousel owl-theme" >
+                <div class="item">
+                    <img class="box-filme" src="img/mini1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini10.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini5.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini9.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini7.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini4.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini8.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini6.jpg" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- javascript dos incones do font awesome-->
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/sutup.js"></script>
+<script>
+    function linkedin() {
+      window.location.assign("https://pt.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring")
+    }
+    function play() {
+      window.location.assign("https://www.youtube.com/watch?v=-xg-FkPtLag&ab_channel=CamClips")
+    }
+</script>
+<script src="js/btnMenu.js"></script>
+
+</body>
+</html>
